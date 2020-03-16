@@ -74,6 +74,7 @@ function getPropertiesFromArgs(){
 function winPathToLinuxPath(winPath)
 {
     winPath = winPath.replace(/\\/g,'/');
+    winPath = winPath.replace('C:','/mnt/c')
     winPath = winPath.replace('c:','/mnt/c')
     return winPath;
 }
